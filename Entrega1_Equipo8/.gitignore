@@ -1,0 +1,10 @@
+# Salidas regeneradas por run.py
+resultados/
+salidas_avance1b/
+Resultados_Avance1B.zip
+Operations-Management/
+# Entorno
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
