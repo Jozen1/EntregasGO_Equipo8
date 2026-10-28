@@ -28,4 +28,4 @@ cmd = [
 ]
 print("Ejecutando Entrega 1 y Entrega 2 sin cargas manuales...", flush=True)
 subprocess.run(cmd, cwd=DIR, check=True)
-print("Revisar Entrega2_Equipo8_ejecutada.ipynb y Avance2_Equipo8/resultados/", flush=True)
+print("Revisar Entrega2_Equipo8_ejecutada.ipynb y la ruta de resultados indicada en el notebook.", flush=True)
