@@ -1,0 +1,24 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versiones": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "pulp": "3.3.0",
+    "highspy": "1.12.0"
+  },
+  "hashes_datos": {
+    "datos/crudos/calidad_atributos.csv": "7fc1587bbc5a4ff2e9033ae314850096b7ef9587a77660ed9c4874940875c3f5",
+    "datos/crudos/calidad_llenado.csv": "8727bc61bcd80cdf5a748abc6b265f636c9a593c2e9dfac31d1a599a6564a469",
+    "datos/crudos/capacidad_horizonte.csv": "3085e32cfdfecbeaf5c343aba481fa752d9a7eb09c7e1768235a9ded3f7ada34",
+    "datos/crudos/compromisos_semana_focal.csv": "c973af5a19f588192c4f4869b4e132f60bc0dab8b06f0cef0337e0d35dc4629b",
+    "datos/crudos/demanda_semanal.csv": "449ca7aaa5c64e3958e38b11c023ad22588c1e422bf0ee129c8794f8591d9f8e",
+    "datos/crudos/especificaciones_calidad.csv": "1e4a9f746f401e55a5bf1288dd8e68d71478ce63414694483151c2af491d90df",
+    "datos/crudos/inventario_inicial.csv": "322bab95e66145ba685a9660ac606ea8930870a4e486ce29580770bd6e84373b",
+    "datos/crudos/maestro_sku.csv": "23fa78966c5db09a8cf3c69949c3d38664a3e472fb48e1f16e81b20568d18cbf",
+    "datos/crudos/setups_cip.csv": "22eedfc8ac5d918d5117119d4193a6231a1a8e9514d0a9cf620288a4630bab21",
+    "datos/heredados/C5_sigma_error_acumulado_lead_time.csv": "8e356a11c353f16728ebf8e6bc9cbb64c88c2777a1b5d187286aa79028a41f89",
+    "datos/heredados/procedencia_ejecucion.json": "e587a671d0ad5825a240e272e0f04b6d57d122587d08135a1494eac14d799b28",
+    "datos/heredados/traspaso_entrega2.csv": "a1eee2110c87fa8304c341937589ec2214a9cc99ba206a1b24627276e60f5c21"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nombre": "base",
+  "semilla": 20261020,
+  "tiempo_limite_s": 180,
+  "brecha_objetivo": 1e-05,
+  "factor_capacidad_mezcla": 1.0,
+  "delta_servicio": 0.0,
+  "factor_penalidad": 1.0,
+  "rho_conservadora": false,
+  "cip_estadistico": "mean",
+  "habilitar_extra_L1": false,
+  "jarabe_inicial_cero": false,
+  "seguridad_estricta": false,
+  "factor_costo_seguridad": 1.0,
+  "cobertura_terminal_semanas": 1.0,
+  "terminal_jarabe": true,
+  "costo_jarabe_imputado": false,
+  "jarabe_sin_acopio": false,
+  "piso_sigma_L2": false,
+  "tiempo_limite_sensibilidad_s": 90,
+  "tiempo_limite_benchmark_s": 30,
+  "trabajadores_sensibilidades": 3
+}
