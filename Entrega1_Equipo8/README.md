@@ -76,3 +76,9 @@ Tablas compactas para el informe en la misma carpeta: `C1_rho_por_linea.csv`, `C
   selección y calibración firmadas antes de la prueba, coherencia de la tabla de traspaso). Si alguna falla,
   la ejecución se detiene con error.
 - Toda cifra del informe se genera desde el código y queda guardada en `resultados/` o `salidas_avance1b/`.
+
+## Comparación de las nueve series
+
+En las figuras de ventas crudas, ventas frente a demanda estimada y pronóstico final, los nueve paneles comparten el mismo eje vertical dentro de cada figura. Se muestran las etiquetas en todos los paneles y se conservan los valores atípicos; la escala común puede hacer que las series de menor volumen se vean más planas. La corrección no modifica los datos ni los pronósticos.
+
+La instantánea `Entrega1_final_ejecutada.ipynb` conservada en el repositorio corresponde a una ejecución anterior y puede mostrar gráficos con las escalas anteriores. Para obtener las figuras actualizadas, ejecuta de nuevo `Entrega1_final.ipynb` o `python run.py`.
