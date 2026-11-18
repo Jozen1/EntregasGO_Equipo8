@@ -12,7 +12,7 @@ Python 3.11 o superior; validado con Python 3.12. Desde la raíz del repositorio
 python Entrega2_Equipo8/run.py
 ```
 
-El ejecutor instala las dependencias fijadas y verifica los datos de `datos/crudos/` contra la revisión docente. En Colab, abrir `Entrega2_Equipo8.ipynb` y seleccionar **Entorno de ejecución → Ejecutar todo**. El cuaderno obtiene los datos del repositorio docente cuando se abre fuera del repositorio del equipo. Ambas rutas comprueban las mismas huellas de los archivos. La corrida completa puede tardar varios minutos. El modo `completo` ejecuta base, referencias y sensibilidades. El modo `base` calcula el plan principal.
+El ejecutor instala las dependencias fijadas y verifica los datos de `datos/crudos/` contra la revisión docente. En Colab, abrir `Entrega2_Equipo8.ipynb` y seleccionar **Entorno de ejecución → Ejecutar todo**. Fuera del repositorio del equipo, el cuaderno descarga los diez archivos del caso desde la revisión docente fijada. Ambas rutas comprueban las mismas huellas de los archivos. La corrida completa puede tardar varios minutos. El modo `completo` ejecuta base, referencias y sensibilidades. El modo `base` calcula el plan principal.
 
 ## Modelo y decisiones explícitas
 
@@ -35,3 +35,5 @@ La referencia lote por lote fija la producción que propone la regla y utiliza l
 Las sensibilidades registran costo, inventario, horas extra, atraso y servicio. Cuando el plan base sigue siendo factible, se ofrece como punto de partida al solver de ese escenario. Se guardan el costo con la tarifa de atraso de base y, para los cambios de capacidad de mezcla, el intervalo de diferencia de costos que permiten las cotas de ambas corridas. Los costos marginales por caja usan la tarifa de mezcla de la semana 11 y de envasado de la semana 12.
 
 Los supuestos faltantes del caso siguen visibles. Los resultados se deben defender bajo esos supuestos. El informe debe declarar la asistencia de IA en programación y revisión, según el enunciado.
+
+La carpeta [traspaso](resultados_verificados/traspaso) conserva las 117 filas de entrada del plan y el error acumulado por SKU. El cuaderno calcula estas tablas a partir de los datos crudos.
