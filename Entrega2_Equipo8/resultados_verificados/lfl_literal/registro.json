@@ -1,0 +1,19 @@
+{
+  "escenario": "lfl_literal",
+  "estado": "kInfeasible",
+  "factible": false,
+  "valor_objetivo_clp": null,
+  "objetivo_solver": null,
+  "cota_solver": null,
+  "brecha_relativa": null,
+  "segundos": 0.32799170499993124,
+  "semilla": 20261020,
+  "tiempo_limite_s": 180,
+  "brecha_objetivo": 1e-05,
+  "variables": 975,
+  "restricciones": 1551,
+  "etapa": "cost",
+  "nota": "Cantidades fijadas por lote por lote; el solver asigna el jarabe y las horas extra.",
+  "horas_exceso_LFL_L1": 43.9618643723404,
+  "semanas_exceso_LFL_L1": 6
+}

@@ -1,26 +1,240 @@
 {
-  "penalidad_doble": 2942,
-  "mezcla_mas10": 2942,
-  "servicio_mas2pp": 2942,
-  "lfl_rotacion1": 3098,
-  "lfl_rotacion2": 3098,
-  "lfl_reparada": 3098,
-  "CIP_maximo": 2942,
-  "OT_L1_imputada": 2942,
-  "lfl_rotacion0_desvio": 3098,
-  "penalidad_mitad": 2942,
-  "sin_proteccion_terminal": 2942,
-  "jarabe_costo_imputado": 2942,
-  "servicio_menos2pp": 2942,
-  "seguridad_costo_doble": 2942,
-  "mezcla_menos10": 2942,
-  "lfl_rotacion0": 3098,
-  "lfl_rotacion2_desvio": 3098,
-  "lfl_rotacion1_desvio": 3098,
-  "rho_conservadora": 2942,
-  "seguridad_costo_mitad": 2942,
-  "terminal_media_semana": 2942,
-  "jarabe_sin_acopio": 2981,
-  "base": 2942,
-  "piso_seguridad_L2": 2942
+  "sin_reoptimizar": true,
+  "planes_auditados": [
+    {
+      "escenario": "CIP_maximo",
+      "controles": 2949
+    },
+    {
+      "escenario": "OT_L1_imputada",
+      "controles": 2949
+    },
+    {
+      "escenario": "base",
+      "controles": 2949
+    },
+    {
+      "escenario": "jarabe_costo_imputado",
+      "controles": 2949
+    },
+    {
+      "escenario": "jarabe_sin_acopio",
+      "controles": 2988
+    },
+    {
+      "escenario": "lfl_reparada",
+      "controles": 3105
+    },
+    {
+      "escenario": "lfl_rotacion0",
+      "controles": 3105
+    },
+    {
+      "escenario": "lfl_rotacion0_desvio",
+      "controles": 3104
+    },
+    {
+      "escenario": "lfl_rotacion1",
+      "controles": 3105
+    },
+    {
+      "escenario": "lfl_rotacion1_desvio",
+      "controles": 3104
+    },
+    {
+      "escenario": "lfl_rotacion2",
+      "controles": 3105
+    },
+    {
+      "escenario": "lfl_rotacion2_desvio",
+      "controles": 3104
+    },
+    {
+      "escenario": "mezcla_mas10",
+      "controles": 2949
+    },
+    {
+      "escenario": "mezcla_menos10",
+      "controles": 2949
+    },
+    {
+      "escenario": "penalidad_doble",
+      "controles": 2949
+    },
+    {
+      "escenario": "penalidad_mitad",
+      "controles": 2949
+    },
+    {
+      "escenario": "piso_seguridad_L2",
+      "controles": 2949
+    },
+    {
+      "escenario": "rho_conservadora",
+      "controles": 2949
+    },
+    {
+      "escenario": "seguridad_costo_doble",
+      "controles": 2949
+    },
+    {
+      "escenario": "seguridad_costo_mitad",
+      "controles": 2949
+    },
+    {
+      "escenario": "seguridad_extra_L1",
+      "controles": 3066
+    },
+    {
+      "escenario": "seguridad_jarabe_mas15",
+      "controles": 3066
+    },
+    {
+      "escenario": "servicio_mas2pp",
+      "controles": 2949
+    },
+    {
+      "escenario": "servicio_menos2pp",
+      "controles": 2949
+    },
+    {
+      "escenario": "sin_proteccion_terminal",
+      "controles": 2949
+    },
+    {
+      "escenario": "sin_restitucion_jarabe",
+      "controles": 2949
+    },
+    {
+      "escenario": "terminal_media_semana",
+      "controles": 2949
+    }
+  ],
+  "archivos_codigo": {
+    "codigo/ejecutar.py": "c51073e1c7008b05f0dda273fcf8dc970650092692ec6c754e347b266b9acb8f",
+    "codigo/modelo.py": "407376a6388ccd1c019549edfb6c45d6e747e6063a141e29db6326f153edacc9",
+    "codigo/verificar.py": "ef43a6907feaa74b042c0dbbdb5cb9c74a3273dd99cc27e78d5b8af205fa89cb"
+  },
+  "escenarios_principales": [
+    {
+      "escenario": "base",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "lfl_literal",
+      "estado": "kInfeasible",
+      "factible": false
+    },
+    {
+      "escenario": "lfl_reparada",
+      "estado": "kOptimal",
+      "factible": true
+    },
+    {
+      "escenario": "mezcla_menos10",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "mezcla_mas10",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "servicio_menos2pp",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "servicio_mas2pp",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "penalidad_mitad",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "penalidad_doble",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "sin_proteccion_terminal",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "sin_restitucion_jarabe",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "terminal_media_semana",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "rho_conservadora",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "CIP_maximo",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "OT_L1_imputada",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "jarabe_costo_imputado",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "jarabe_sin_acopio",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "piso_seguridad_L2",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "sin_jarabe_inicial",
+      "estado": "kInfeasible",
+      "factible": false
+    },
+    {
+      "escenario": "seguridad_estricta",
+      "estado": "kInfeasible",
+      "factible": false
+    },
+    {
+      "escenario": "seguridad_jarabe_mas15",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "seguridad_extra_L1",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "seguridad_costo_mitad",
+      "estado": "kTimeLimit",
+      "factible": true
+    },
+    {
+      "escenario": "seguridad_costo_doble",
+      "estado": "kTimeLimit",
+      "factible": true
+    }
+  ]
 }

@@ -1,24 +1,11 @@
 # Validación de la Entrega 2
 
-Ejecución local completa con versiones fijadas y límites normales: base 180 s, sensibilidades 90 s y referencia 30 s por etapa. Se ejecutaron las celdas de cálculo y el optimizador sin modo de prueba rápida. La sesión local se interrumpió antes de terminar la última sensibilidad; esa sensibilidad se ejecutó después con su configuración normal y se reconstruyeron y verificaron las tablas y celdas finales. No se afirma una corrida ininterrumpida completa. La instalación inicial se omitió en la prueba local porque se comprobaron previamente las versiones exactas instaladas. No se afirma prueba de la interfaz Colab.
+La revisión se hizo por etapas en Python 3.12 con los paquetes fijados. Se recalculó el traspaso de Entrega 1 desde los CSV oficiales y se comprobaron sus 117 filas con la huella de la corrida anterior. Los límites normales fueron 180 s para la base, 90 s para sensibilidades y 30 s por etapa de reparación de la referencia. La validación se realizó en el entorno local.
 
-Datos docentes a revisión fija; el traspaso se recalculó desde calidad y pronóstico en esta ejecución. No se modificó Entrega 1. Los tres gráficos de nueve series mantienen eje vertical compartido dentro de cada figura.
+La corrida base archivada y las sensibilidades corresponden al registro de HiGHS. El estado por límite de tiempo admite una solución factible con una brecha abierta. El costo reportado en el PDF reproduce esa corrida. El informe señala el estado, la cota y los costos de la base y remite a las tablas para las comparaciones.
 
-## Resultado de la ejecución
+La auditoría independiente revisó 27 planes, incluidas las etapas auxiliares de la referencia. Abarca los balances, los límites de capacidad, la cartera de la semana 12, el uso del jarabe, la reserva terminal y la reconstrucción de costos. Las pruebas de alteración confirmaron que el verificador rechaza un cambio en la cantidad de la semana 12, en el jarabe que llega desde la semana 11 o en el costo de producción.
 
-- Estado base: kTimeLimit; costo objetivo: 949,483,282.31 CLP; cota: 945,510,297.30 CLP; brecha: 0.4184%.
-- Costo operativo sin penalización proxy de seguridad: 948,355,192.45 CLP.
-- Servicio semanal FIFO estimado sobre pronóstico: 100.0000%; no equivale a servicio contractual observado.
-- Déficit de seguridad: 805.7785 caja-semanas. Inventario y atraso simultáneos: cero pares SKU-semana.
-- 24 planes con verificación aritmética independiente. Base: 2942 controles. Se comprobó además que el verificador rechaza alteraciones en producción, inventario y déficit de seguridad.
-- 117 filas SKU-semana y atraso final cero. Cantidades y preparaciones de semana 12 congeladas en `base/`.
+La corrida con seguridad estricta y jarabe inicial de base resultó infactible. Se verificaron dos alternativas que satisfacen la meta de seguridad en cada SKU y semana: 15 % de jarabe inicial adicional por familia y uso de horas extra de L1 a tarifa imputada. Las configuraciones y planes se guardan en `resultados_verificados`.
 
-El escenario base supone jarabe preparado antes del horizonte. Es un supuesto inicial exportado, no un inventario observado. La comparación incluye seguridad estricta y arranque sin jarabe. Los escenarios infactibles se conservan como tales. El estado y brecha de cada escenario figuran en `comparacion.csv`; no se atribuyen a sensibilidades pequeñas diferencias entre soluciones no óptimas.
-
-## Criterio económico
-
-Se muestran costos por caja vendible para adelantar una semana (95 CLP), atrasar una semana (1.400 CLP), y usar horas extra de mezcla/envasado. Adelantar puede ser más barato por unidad que horas extra, siempre que exista capacidad y considerando preparaciones. El MIP evalúa conjuntamente esas restricciones. Las comparaciones unitarias son referencias, no precios sombra ni prueba de optimalidad.
-
-## Alcance de la entrega
-
-Código, configuración, verificación, sensibilidad y resultados terminados bajo los supuestos documentados. El informe y la exposición deben usar estas salidas y justificar el jarabe inicial, la relajación de seguridad, los promedios CIP y la política terminal; no se sustituyen por una garantía de datos que el caso no entrega. Debe declararse la asistencia de IA según el enunciado.
+La regla lote por lote supera la capacidad de L1 en seis semanas. El diagnóstico está en `resultados_verificados/lfl_literal`. El puente de semana 12 registra el jarabe recibido y consumido, los lotes y las horas de preparación de cada recurso.

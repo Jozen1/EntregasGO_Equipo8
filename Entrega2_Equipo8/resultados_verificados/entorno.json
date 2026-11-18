@@ -16,6 +16,7 @@
     "datos/crudos/especificaciones_calidad.csv": "1e4a9f746f401e55a5bf1288dd8e68d71478ce63414694483151c2af491d90df",
     "datos/crudos/inventario_inicial.csv": "322bab95e66145ba685a9660ac606ea8930870a4e486ce29580770bd6e84373b",
     "datos/crudos/maestro_sku.csv": "23fa78966c5db09a8cf3c69949c3d38664a3e472fb48e1f16e81b20568d18cbf",
+    "datos/crudos/metadatos.json": "95e7880a417b8faa603e623624332af4c1b6e70ddad82e95e4be539327ca89f1",
     "datos/crudos/setups_cip.csv": "22eedfc8ac5d918d5117119d4193a6231a1a8e9514d0a9cf620288a4630bab21",
     "datos/heredados/C5_sigma_error_acumulado_lead_time.csv": "8e356a11c353f16728ebf8e6bc9cbb64c88c2777a1b5d187286aa79028a41f89",
     "datos/heredados/procedencia_ejecucion.json": "e587a671d0ad5825a240e272e0f04b6d57d122587d08135a1494eac14d799b28",
